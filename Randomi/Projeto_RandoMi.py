@@ -12,6 +12,8 @@ pygame.display.set_caption("RadoMi - Menu")
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 LIGHT_BLUE = (100, 200, 255)
+GRAY = (100, 100, 100)
+
 
 # Fontes
 title_font = pygame.font.SysFont('Arial', 64, bold=True)
@@ -73,7 +75,7 @@ def draw_menu():
     # Opções do menu
     for i, option in enumerate(menu_options):
         if i == selected_option:
-            text = selected_font.render(option, True, LIGHT_BLUE)
+            text = selected_font.render(option, True, GRAY)
         else:
             text = menu_font.render(option, True, BLACK)
 
